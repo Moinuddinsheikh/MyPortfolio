@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;">
+
+<head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" href="assets/images/icon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        $(window).ready(function(){
+            AOS.init({
+                offset: 120,
+                delay: 0,
+                duration: 500,
+                easing: 'ease-out',
+                once: true,
+            });
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <div id="splash">
+        <img id="splash-logo" src="assets/images/logo.png">
+    </div>
+    <div class="row">
+        <div>
+            <img id="coverpage-shadow" src="assets/images/coverShadow.png">
+        </div>
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img id="coverpage-logo" src="assets/images/logo.png" title="Moinuddin Sheikh Portfolio">
+                </div>
+            </div>
+            <div class="row">
+                <div id="coverpage-txt" class="col-lg-6 col-sm-8">
+                    <div id="coverpage-intro">
+                        <p>Hello, I am <span>Moinuddin Sheikh</span></p>
+                        <p>Full Stack Developer & <br> UI/UX Designer</p>
+                    </div>
+                    <br><br><br>
+                    <div id="coverpage-list">
+                        <ul>
+                            <li class="active"><span></span>About</li>
+                            <li><span></span><a href="#skill">Skills</a></li>
+                            <li><span></span><a href="#project">Projects</a></li>
+                            <li><span></span><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-4">
+                    <img id="coverpage-art" src="assets/images/coverArt2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" data-aos="fade-up">
+        <div id="about">
+            <p>
+                A highly motivated and hardworking individual pursuing Computer Science. Seeking an apprenticeship in
+                the engineering industry to build upon a keen scientific interest and start a career as a Computer
+                engineer.
+            </p>
+        </div>
+    </div>
+
+    <div id="skill" class="row skills" data-aos="zoom-out">
+        <div class="col-lg-12">
+            <div id="skill-title" class="row">
+                Skills<span>.</span>
+            </div>
+            <div id="skill-list" class="row">
+                <div id="ht" class="skill-item clr-b size-6">HTML</div>
+                <div id="uu" class="skill-item clr-b size-8">UI & UX</div>
+                <div id="cs" class="skill-item clr-b size-4">CSS</div>
+                <div id="ph" class="skill-item clr-b size-8">PHP</div>
+                <div id="js" class="skill-item clr-b size-8">Javascript</div>
+                <div id="wp" class="skill-item clr-b size-4">Wordpress</div>
+                <div id="ms" class="skill-item clr-b size-6">MySQL</div>
+                <div id="ad" class="skill-item clr-r size-6">Android</div>
+                <div id="ft" class="skill-item clr-r size-4">Flutter</div>
+                <div id="jv" class="skill-item clr-g size-6">Java</div>
+                <div id="pt" class="skill-item clr-g size-6">Python</div>
+                <div id="nj" class="skill-item clr-g size-6">Node JS</div>
+                <div id="ej" class="skill-item clr-g size-4">Electron JS</div>
+                <div id="jq" class="skill-item clr-b size-8">jQuery</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project" class="row projects">
+        <div class="col-lg-2">
+            <div id="project-title" data-aos="slide-right">
+                Projects<span>.</span>
+            </div>
+        </div>
+        <div class="col-lg-10">
+            <div class="row project-row" data-aos="fade-up">
+                <div class="col-lg-7">
+                    <div class="projectitem-title">
+                        MobileCloud Android application
+                    </div>
+                    <div class="projectitem-body">
+                        <br>
+                        <p>Cross Platform sharing without any Connection</p>
+
+                        <p>An invisible storage present in your mobile accessible from any device. Add any type of files
+                            through our android app into the storage and access them from another PC without the need of
+                            any
+                            wifi connection or any chord.</p><br>
+                        <p>Technologies used:
+                            <ul>
+                                <li>1. Android Studio</li>
+                                <li>2. Web Development</li>
+                                <li>3. AWS EC2 instances</li>
+                            </ul>
+                        </p>
+
+                        <p><a href="https://www.youtube.com/watch?v=mGtC-vKEnB0" target="_blank">Youtube video link</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <a href="https://www.youtube.com/watch?v=mGtC-vKEnB0" target="_blank">
+                        <img id="projectitem-1-img" src="assets/images/cloudmob-img.png"
+                        title="MobileCloud Android application">
+                    </a>
+                </div>
+            </div>
+            <div class="row project-row" data-aos="fade-up">
+                <div class="col-lg-7">
+                    <div class="projectitem-title">
+                        Plagiarism Checker Desktop application
+                    </div>
+                    <div class="projectitem-body">
+                        <br>
+                        <p>Desktop software for plagiarism checker</p>
+
+                        <p>It checks the plagiarism between two text documents. You can either copy the text and import
+                            the documents in .txt or .docx format. Also it can check plagiarism for a text document
+                            online by providing the title of the document. Provides the plagiarism percentage between
+                            each of the searched webpage and the document given by user.</p><br>
+                        <p>Technologies used:
+                            <ul>
+                                <li>1. Electron JS</li>
+                                <li>2. Python</li>
+                            </ul>
+                        </p>
+
+                        <p><a href="https://www.youtube.com/watch?v=1lT8JjkRxiY" target="_blank">Youtube video link</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <a href="https://www.youtube.com/watch?v=1lT8JjkRxiY" target="_blank">
+                        <img id="projectitem-2-img" src="assets/images/plagdeskapp.png"
+                        title="Plagiarism Checker Desktop application">
+                    </a>
+                </div>
+            </div>
+            <div class="row project-row" data-aos="fade-up">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="projectitem-title pt-e">
+                            Event based websites for college
+                        </div>
+                        <div class="projectitem-body pt-e">
+                            <br>
+                            <p>Build and hosted various event based websites for Symposium on Blockchain Event, Robotics
+                                Event, College Induction Program.
+                            </p>
+                            <p><a href="https://github.com/Moinuddinsheikh/MyWebCreations" target="_blank">Github link</a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <a href="https://moinuddinsheikh.github.io/MyWebCreations/symposium.page/" target="_blank">
+                                <img class="projectitem-3-img" src="assets/images/web1.png" title="Block Chain Symposium Event">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <a href="https://moinuddinsheikh.github.io/MyWebCreations/techfest18.page/" target="_blank">
+                                <img class="projectitem-3-img pi-2" src="assets/images/web2.png" title="Techfest 18 Event">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row workd">
+        <div class="col-lg-12" data-aos="fade-up">
+            <div class="row workd-title">
+                Worked with<span>.</span>
+            </div>
+            <div class="row workd-body">
+                <img class="workd-item" src="assets/images/comp1.png" title="SUAS Indore">
+                <img class="workd-item" src="assets/images/comp3.png" title="Oxygen InfoLab Pvt. Ltd.">
+                <img class="workd-item" src="assets/images/comp2.jpg" title="Encourage Infotech">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="row contacts">
+        <div class="col-lg-4 git">
+            <div class="row">
+                Get in touch.
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-1">
+                    <a href="www.linkedin.com/in/moinuddin-sheikh-80914a193" target="_blank">
+                        <img class="btm-icon" src="assets/images/linkedin.png" title="Linkedin Profile">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-1">
+                    <a href="https://github.com/Moinuddinsheikh/MyWebCreations" target="_blank">
+                        <img class="btm-icon" src="assets/images/github.png" title="Github Repositories">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-1">
+                    <a href="https://www.youtube.com/channel/UCFiD3j2TRWTCELuT1EyUfxg?view_as=subscriber" target="_blank">
+                        <img class="btm-icon" src="assets/images/youtube.png" title="YouTube Channel">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-9"></div>
+            </div>
+        </div>
+        <div class="col-lg-4 logo">
+            <img id="btm-logo" src="assets/images/logo.png">
+        </div>
+        <div class="col-lg-4 info">
+            <div class="row">moinuddinsheikh20@gmail.com</div>
+            <div class="row">+91-82699-74045</div>
+            <div class="row">Indore, MP, India 452002</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
