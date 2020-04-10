@@ -1,0 +1,582 @@
+html{
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-color: rgb(236,244,229);
+    overflow-x: hidden;
+    font-family: "nunito";
+}
+
+#splash{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    background-color: rgb(34,42,53);
+    z-index: 1;
+}
+
+#splash-logo{
+    width: 4%;
+    position: fixed;
+    left: 47%;
+    top: 40%;
+    z-index: inherit;
+    filter: drop-shadow(0px 0px 20px black);
+}
+
+.popanim{
+    animation: popup 0.8s infinite;
+}
+
+@keyframes popup{
+    0%{
+        transform: scale(1);
+      }
+      50%{
+        transform: scale(1.4);
+      }
+      60%{
+        transform: scale(1.1);
+      }
+      70%{
+        transform: scale(1.2);
+      }
+      80%{
+        transform: scale(1);
+      }
+      90%{
+        transform: scale(1.1);
+      }
+      100%{
+        transform: scale(1);
+      }
+}
+
+#coverpage-shadow{
+    display: block;
+    position: absolute;
+    margin-top: -2%;
+    width: 103%;
+}
+
+#coverpage-shadow-mob{
+    display:none;
+}
+
+#coverpage-logo{
+    margin-top: 2%;
+    margin-left: 3%;
+    width: 4%;
+}
+
+#coverpage-art{
+    width: 95%;
+}
+
+@font-face{
+    font-family: "playfair";
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face{
+    font-family: "nunito";
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+
+#coverpage-txt{
+    padding-left: 8%;
+    padding-top: 5%;
+    color: rgb(64,64,64);
+}
+
+#coverpage-intro span{
+    color: rgb(32,32,32);
+}
+
+#coverpage-intro{
+    font-family: "playfair";
+    font-size: 2.3em;
+}
+
+#coverpage-list{
+    font-size: 1.2em;
+    margin-right: 75%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#coverpage-list a{
+    text-decoration: none;
+    color: rgb(64,64,64);
+}
+
+#coverpage-list li span{
+    content: '';
+    height: 1px;
+    width: 2em;
+    background-color: black;
+    position: absolute;
+    margin: 2% 0 0 -7%;
+}
+
+#coverpage-list li::before{
+    content: '';
+    height: 1px;
+    width: 0em;
+    background-color: black;
+    position: absolute;
+    margin: 0.8em 0 0 0;
+}
+
+#coverpage-list li.active::before{
+    width: 3.5em;
+}
+
+#coverpage-list li:hover::before{
+    animation: focusbar 0.25s forwards;
+}
+
+@keyframes focusbar{
+    100% { width: 3.5em; }
+}
+
+#about{
+    width: 50%;
+    display: block;
+    margin-left: 25%;
+    background-color: white;
+    padding: 2%;
+    margin-top: 8%;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 500;
+}
+
+#about p{
+    margin: 0;
+}
+
+.skills{
+    width: 80%;
+    margin: 15% 0% 10% 10%;
+}
+
+#skill-title{
+    font-size: 3.3em;
+    display: block;
+    text-align: center;
+}
+
+#skill-title span, #project-title span, .workd-title span{
+    color: rgb(46,117,182);
+}
+
+#skill-list{
+    height: 30em;
+}
+
+.skill-item{
+    display: block;
+    position: absolute
+}
+
+.skill-item::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 110%;
+    height: 20%;
+    top: 50%;
+    left: -5%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.clr-g::before{    background-color: green;     }
+
+.clr-r::before{    background-color: red;       }
+
+.clr-b::before{    background-color: blue;     }
+
+.size-8{    font-size: 2.8em;   }
+
+.size-6{    font-size: 2.2em;   }
+
+.size-4{    font-size: 1.6em;   }
+
+#ht{
+    left: 10%;
+    top: 20%;
+}
+#uu{
+    left: 25%;
+    top: 30%;
+}
+#ph{
+    left: 25%;
+    top: 55%;
+}
+#jq{
+    left: 30%;
+    top: 80%;
+}
+#pt{
+    left: 0%;
+    top: 50%;
+}
+#ej{
+    left: 7%;
+    top: 75%;
+}
+#nj{
+    left: 85%;
+    top: 52%;
+}
+#ad{
+    left: 45%;
+    top: 40%;
+}
+#wp{
+    left: 55%;
+    top: 55%;
+}
+#ft{
+    left: 45%;
+    top: 70%;
+}
+#ms{
+    left: 60%;
+    top: 85%;
+}
+#js{
+    left: 80%;
+    top: 70%;
+}
+#cs{
+    left: 90%;
+    top: 20%;
+}
+#jv{
+    left: 70%;
+    top: 30%;
+}
+
+.projects{
+    background-color: rgb(34,42,53);
+    color: white;
+    height: 130em;
+}
+
+.project-row{
+    margin-right: 2%;
+    margin-top: 10%;
+}
+
+#project-title{
+    writing-mode: vertical-lr;
+    display: block;
+    font-size: 3.3em;
+    margin-left: 20%;
+    margin-top: 150%;
+}
+
+.projectitem-title{
+    font-size: 2.3em;
+}
+
+.projectitem-body{
+    font-size: 1.2em;
+}
+
+#projectitem-1-img{
+    width: 105%;
+    margin-top: 15%;
+}
+
+#projectitem-2-img{
+    width: 105%;
+    margin-top: 15%;
+}
+
+.projectitem-3-img{
+    width: 90%;
+    margin-top: 5%;
+}
+
+.workd{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.workd-title{
+    font-size: 2.3em;
+}
+
+.workd-body{
+    margin-top: 2%;
+}
+
+.workd-item{
+    margin: 0 10% 0 10%;
+    box-shadow: 0px 0px 20px 5px #888888cc;
+    border: 3px solid black;
+    padding: 3px;
+}
+
+.contacts{
+    margin-top: 5%;
+    color: white;
+    background-color: rgb(34,42,53);
+    padding: 3% 10% 3% 10%;
+}
+
+#btm-logo{
+    height: 50%;
+    margin-left: 36%;
+    position: absolute;
+    margin-top: 12%;
+}
+
+.contacts .git{
+    font-size: 2.3em;
+    padding: 0;
+}
+
+.contacts .info .row{
+    text-align: end;
+    display: block;
+    margin: 15px 0%;
+}
+
+.btm-icon{
+    width: 85%;
+}
+
+@media (max-width: 600px){
+    
+#coverpage-art{
+    position: absolute;
+    right: 10%;
+    width: 65%;
+    display: block;
+    margin-top: -80%;
+}
+
+#splash-logo{
+    width: 20%;
+    left: 40%;
+}
+
+#coverpage-shadow{
+    display: none;
+}
+
+#coverpage-shadow-mob{
+    display: block;
+    position: absolute;
+    margin-top: -2%;
+    height: 80%;
+}
+
+#coverpage-logo{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 7%;
+}
+
+#coverpage-intro{
+    font-size: 1.3em;
+}
+
+#coverpage-list{
+    font-size: 1em;
+    margin-top: 40%;
+}
+
+#coverpage-list li:hover::before{
+    animation: unset;
+}
+
+#coverpage-list li span {
+    margin: 3% 0 0 -10%;
+}
+
+#about {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25%;
+    font-size: 1em;
+}
+
+.skills{
+    margin-top: 35%;
+}
+
+#skill-title {
+    font-size: 2.5em;
+}
+
+.size-8{    font-size: 2em;   }
+
+.size-6{    font-size: 1.5em;   }
+
+.size-4{    font-size: 1em;   }
+
+#ht{
+    left: 5%;
+    top: 12%;
+}
+#uu{
+    left: 0%;
+    top: 22%;
+}
+#ph{
+    left: 9%;
+    top: 56%;
+}
+#jq{
+    left: 30%;
+    top: 78%;
+}
+#pt{
+    left: 0%;
+    top: 40%;
+}
+#ej{
+    left: 7%;
+    top: 73%;
+}
+#nj{
+    left: 60%;
+    top: 54%;
+}
+#ad{
+    left: 45%;
+    top: 35%;
+}
+#wp{
+    left: 26%;
+    top: 48%;
+}
+#ft{
+    left: 35%;
+    top: 65%;
+}
+#ms{
+    left: 68%;
+    top: 88%;
+}
+#js{
+    left: 60%;
+    top: 69%;
+}
+#cs{
+    left: 80%;
+    top: 16%;
+}
+#jv{
+    left: 70%;
+    top: 27%;
+}
+
+.projects{
+    height: 127em;
+    padding-bottom: 20%;
+}
+
+#project-title {
+    writing-mode: horizontal-tb;
+    font-size: 2.5em;
+    margin-left: 0;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.project-row {
+    margin-right: 0;
+    margin-top: 15%;
+    padding: 0 5%;
+}
+
+.projectitem-title {
+    font-size: 1.5em;
+}
+
+.projectitem-body {
+    font-size: 1em;
+}
+
+#projectitem-1-img, #projectitem-2-img{
+    width: 75%;
+    margin-top: -5%;
+    margin-left: 21%;
+}
+
+.pt-e{
+    padding: 0 15px;
+}
+
+.projectitem-3-img{
+    width: 45%;
+}
+
+.pi-2{
+    margin: -45% 0 0 55%;
+}
+
+.workd-item {
+    margin: 0 4% 0 4%;
+    width: 20%;
+}
+
+.workd {
+    margin-top: 7%;
+    margin-left: 7%;
+}
+
+.workd-title{
+    font-size: 1.5em;
+}
+
+.workd-body {
+    margin-top: 4%;
+}
+
+.contacts {
+    margin-top: 10%;
+    padding: 5% 10% 5% 10%;
+}
+
+.contacts .git {
+    font-size: 1.5em;
+}
+
+.contacts .logo{
+    position: unset;
+}
+
+.contacts .info{
+    font-size: .8em;
+    margin-top: 4%;
+}
+
+#btm-logo {
+    height: 6%;
+    margin-left: 0px;
+    margin-top: 66px;
+}
+
+.btm-icon{
+    width: 61%;
+    position: absolute;
+    left: 834%;
+    margin-top: -80%;
+}
+
+}
