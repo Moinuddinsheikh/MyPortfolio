@@ -5,7 +5,7 @@ $(window).ready(function() {
     setTimeout(function(){
         $('#splash').fadeOut();
         setTimeout(function(){ 
-            $('html').css('overflow','unset');
+            $('html').css('overflow-y','unset');
             setTimeout(function(){ 
                 $('#intro-name').css('animation','name-anim 3s linear forwards');
              
