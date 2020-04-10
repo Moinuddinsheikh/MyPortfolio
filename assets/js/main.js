@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).ready(function() {
 
     $('#splash-logo').toggleClass('popanim');
 
@@ -8,7 +8,7 @@ $(document).ready(function() {
             $('html').css('overflow','unset');
             setTimeout(function(){ 
                 $('#intro-name').css('animation','name-anim 3s linear forwards');
-                
+             
             },200);
         },500);
     },1600);
