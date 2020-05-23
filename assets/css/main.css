@@ -90,7 +90,7 @@ body{
 
 #coverpage-txt{
     padding-left: 8%;
-    padding-top: 10%;
+    padding-top: 8%;
     color: rgb(64,64,64);
 }
 
@@ -360,6 +360,10 @@ ul{
 }
 
 @media (max-width: 600px){
+    
+#coverpage-txt{
+    padding-top: 10%;
+}
     
 #coverpage-art{
     position: absolute;
