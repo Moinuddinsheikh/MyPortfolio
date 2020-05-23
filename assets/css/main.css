@@ -90,7 +90,7 @@ body{
 
 #coverpage-txt{
     padding-left: 8%;
-    padding-top: 5%;
+    padding-top: 10%;
     color: rgb(64,64,64);
 }
 
@@ -366,7 +366,7 @@ ul{
     right: 10%;
     width: 65%;
     display: block;
-    margin-top: -80%;
+    margin-top: -82%;
 }
 
 #splash-logo{
@@ -398,7 +398,7 @@ ul{
 
 #coverpage-list{
     font-size: 1em;
-    margin-top: 40%;
+    margin-top: 45%;
 }
 
 #coverpage-list li:hover::before{
