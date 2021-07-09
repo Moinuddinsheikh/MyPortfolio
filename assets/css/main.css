@@ -270,20 +270,19 @@ ul{
 .projects{
     background-color: rgb(34,42,53);
     color: white;
-    height: 130em;
 }
 
 .project-row{
-    margin-right: 2%;
-    margin-top: 10%;
+    margin: 5% 2% 5% 0%;
 }
 
 #project-title{
     writing-mode: vertical-lr;
     display: block;
     font-size: 3.3em;
-    margin-left: 20%;
+    margin-left: 10px;
     margin-top: 150%;
+    text-align: center;
 }
 
 .projectitem-title{
@@ -295,7 +294,7 @@ ul{
 }
 
 .projectitem-img{
-    width: 105%;
+    width: 100%;
     margin-top: 15%;
 }
 
@@ -477,11 +476,6 @@ ul{
     top: 27%;
 }
 
-.projects{
-    height: 127em;
-    padding-bottom: 20%;
-}
-
 #project-title {
     writing-mode: horizontal-tb;
     font-size: 2.5em;
@@ -491,8 +485,7 @@ ul{
 }
 
 .project-row {
-    margin-right: 10% 0 5% 0;
-    padding: 0 5%;
+    margin: 20% 2% 20% 0%;
 }
 
 .projectitem-title {
@@ -505,7 +498,7 @@ ul{
 
 .projectitem-img{
     width: 75%;
-    margin-top: -5%;
+    margin: 1em 0em;
     margin-left: 21%;
 }
 
