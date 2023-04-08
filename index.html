@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" href="assets/images/icon.png">
+    <link rel="preload" href="assets/images/logo.png" as="image"> 
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        $(window).ready(function(){
+            AOS.init({
+                offset: 120,
+                delay: 0,
+                duration: 750,
+                easing: 'ease-in-out-quad',
+                once: true,
+            });
+            $('html').css('overflow-x','hidden');
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <div id="splash">
+        <img id="splash-logo" src="assets/images/logo.png">
+    </div>
+    <div class="row">
+        <div>
+            <img id="coverpage-shadow" src="assets/images/coverShadow.png">
+            <img id="coverpage-shadow-mob" src="assets/images/coverShadowmob.png">
+        </div>
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img id="coverpage-logo" src="assets/images/logo.png" title="Moinuddin Sheikh Portfolio">
+                </div>
+            </div>
+            <div class="row">
+                <div id="coverpage-txt" class="col-lg-6 col-sm-8">
+                    <div id="coverpage-intro">
+                        <p>Hello, I am <span id="myname">Moinuddin Sheikh</span></p>
+                        <p>Software Developer</p>
+                    </div>
+                    <br><br><br>
+                    <div id="coverpage-list">
+                        <ul>
+                            <li class="active"><span></span>About</li>
+                            <li><span></span><a href="#skill">Skills</a></li>
+                            <li><span></span><a href="#project">Projects</a></li>
+                            <li><span></span><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-4">
+                    <img id="coverpage-art" src="assets/images/coverArt2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" data-aos="fade-up">
+        <div id="about">
+            <p>
+                Proficient and task-driven professional with experience in web design and development providing the technological needs to clients through ingenious innovations. Equipped with diverse Skill set, effective in implementing new features, troubleshooting issues.
+            </p>
+        </div>
+    </div>
+
+    <div id="skill" class="row skills" data-aos="zoom-out">
+        <div class="col-lg-12">
+            <div id="skill-title" class="row" data-aos="zoom-out">
+                Skills<span class="spandot">.</span>
+            </div>
+            <div id="skill-list" class="row">
+                <div id="ht" class="skill-item clr-b size-6" data-aos="flip-left">HTML</div>
+                <div id="uu" class="skill-item clr-b size-6" data-aos="flip-right">AngularJS</div>
+                <div id="cs" class="skill-item clr-b size-4" data-aos="flip-right">CSS</div>
+                <div id="ph" class="skill-item clr-b size-4" data-aos="flip-left">PHP</div>
+                <div id="js" class="skill-item clr-b size-8" data-aos="flip-right">Javascript</div>
+                <div id="wp" class="skill-item clr-b size-6" data-aos="flip-left">ExpressJS</div>
+                <div id="ms" class="skill-item clr-b size-6" data-aos="flip-right">MySQL</div>
+                <div id="ad" class="skill-item clr-r size-6" data-aos="flip-left">ReactJS</div>
+                <div id="ft" class="skill-item clr-r size-4" data-aos="flip-right">Android Studio</div>
+                <div id="jv" class="skill-item clr-g size-6" data-aos="flip-left">Java</div>
+                <div id="pt" class="skill-item clr-g size-6" data-aos="flip-right">Python</div>
+                <div id="nj" class="skill-item clr-g size-6" data-aos="flip-left">Node JS</div>
+                <div id="ej" class="skill-item clr-g size-6" data-aos="flip-right">MongoDB</div>
+                <div id="jq" class="skill-item clr-b size-8" data-aos="flip-left">jQuery</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project" class="row projects">
+        <div class="col-lg-1">
+            <div id="project-title" data-aos="slide-right">
+                Projects<span class="spandot">.</span>
+            </div>
+        </div>
+        <div class="col-lg-11">               
+            <div class="row project-row">
+                <div class="col-lg-7 col-12" data-aos="fade-down-right">
+                    <div class="projectitem-title">
+                        Restaurant Order Management System
+                    </div>
+                    <div class="projectitem-body">
+                        <br>
+                        <p>An Order management webapp that greatly simplifies the ordering process for both the customer and the restaurant.</p>
+
+                        <p>Customer visits the ordering webpage, add items to their order, review the its details any time and when finished check out. This allows restaurant employees to quickly go through the orders as they are placed and produce the necessary items with minimal delay and confusion.</p>
+
+                        <p>Technologies used:
+                            <ul>
+                                <li>Client side Scripting: AngularJS, Typescript, JQuery</li>
+                                <li>Libraries: Chart.js, Bootstrap, Materialize</li>
+                                <li>Programming Language: Javascript</li>
+                                <li>Backend Database: MongoDB</li>
+                                <li>Application Server: NodeJS, ExpressJS</li>
+                                <li>Deployment: Heroku, Git</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <a href="https://github.com/Moinuddinsheikh/Automatic-oms" target="_blank">
+                                Github</a> 
+                        </p>
+                    </div>
+                </div>                
+                <div class="col-lg-5 col-12" data-aos="zoom-in-left">
+                    <a href="https://github.com/Moinuddinsheikh/Automatic-oms" target="_blank">
+                        <img class="projectitem-img" src="assets/images/automaticoms-img.png"
+                        title="Restaurant Order Management System">
+                    </a>
+                </div>
+            </div>         
+            <div class="row project-row">
+                <div class="col-lg-7 col-12" data-aos="fade-down-right">
+                    <div class="projectitem-title">
+                        Quotation Builder Web application
+                    </div>
+                    <div class="projectitem-body">
+                        <br>
+                        <p>Built a quotation builder webapp for generating quotations, controlling billing and maintaining assets of the company.</p>
+
+                        <p>This application helped to reduce the complexity and provide an effortless, convenient and time saving procedure to generate quotations which increased productivity and efficiency of the company by 40%.</p>
+
+                        <p>Main objectives are as follows: It enables searching for the products that the customer wants and will also customize the process in a simple and easy way of adding/ removing the items from bill as required by the customer and finally generating the bills in a specific format(pdf/ word/ excel) of the admin’s choice.</p><br>
+                        <p>Technologies used:
+                            <ul>
+                                <li>Front-end: HTML, CSS, Javascript</li>
+                                <li>Back-end: JSP, servlet, jQuery, AJAX</li>
+                                <li>Database: MySQL</li>
+                                <li>Server: Apache Tomcat 8.5</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <a href="https://github.com/Moinuddinsheikh/Quotation_builder" target="_blank">
+                                Github</a> |
+                            <a href="https://www.youtube.com/watch?v=ICFIy9hLhN4" target="_blank">
+                                Youtube</a>
+                        </p>
+                    </div>
+                </div>                
+                <div class="col-lg-5 col-12" data-aos="zoom-in-left">
+                    <a href="https://github.com/Moinuddinsheikh/Quotation_builder" target="_blank">
+                        <img class="projectitem-img" src="assets/images/quotBuilder.png"
+                        title="Quotation Builder Web application">
+                    </a>
+                </div>
+            </div>
+            <div class="row project-row">
+                <div class="col-lg-7 col-12" data-aos="fade-down-right">
+                    <div class="projectitem-title">
+                        MobileCloud Android application
+                    </div>
+                    <div class="projectitem-body">
+                        <br>
+                        <p>Cross Platform sharing without any Connection</p>
+                        <p>An invisible storage present in your mobile accessible from any device. Add any type of files
+                            through our android app into the storage and access them from another PC without the need of
+                            any wifi connection or any chord.</p><br>
+                        <p>Technologies used:
+                            <ul>
+                                <li>Android Studio</li>
+                                <li>PHP</li>
+                                <li>AWS EC2 instances</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <a href="https://github.com/Moinuddinsheikh/Cloud_mobile" target="_blank">
+                                Github</a> |
+                            <a href="https://www.youtube.com/watch?v=mGtC-vKEnB0" target="_blank">
+                                Youtube</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12" data-aos="zoom-in-left">
+                    <a href="https://github.com/Moinuddinsheikh/Cloud_mobile" target="_blank">
+                        <img class="projectitem-img" src="assets/images/cloudmob-img.png"
+                        title="MobileCloud Android application">
+                    </a>
+                </div>
+            </div>
+            <div class="row project-row">
+                <div class="col-lg-7 col-12" data-aos="fade-down-right">
+                    <div class="projectitem-title">
+                        Plagiarism Checker Desktop application
+                    </div>
+                    <div class="projectitem-body">
+                        <br>
+                        <p>Desktop software for plagiarism checker</p>
+
+                        <p>It checks the plagiarism between two text documents. You can either copy the text and import
+                            the documents in .txt or .docx format. Also it can check plagiarism for a text document
+                            online by providing the title of the document. Provides the plagiarism percentage between
+                            each of the searched webpage and the document given by user.</p><br>
+                        <p>Technologies used:
+                            <ul>
+                                <li>Electron JS</li>
+                                <li>Python</li>
+                                <li>Javascript</li>
+                                <li>CSS</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <a href="https://github.com/Moinuddinsheikh/Plagiarism_Checker" target="_blank">
+                                Github</a> |
+                            <a href="https://www.youtube.com/watch?v=1lT8JjkRxiY" target="_blank">
+                                Youtube</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12" data-aos="zoom-in-left">
+                    <a href="https://github.com/Moinuddinsheikh/Plagiarism_Checker" target="_blank">
+                        <img class="projectitem-img" src="assets/images/plagdeskapp.png"
+                        title="Plagiarism Checker Desktop application">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row workd">
+        <div class="col-lg-12">
+            <div class="row workd-title">
+                <div class="col-lg-12 col-1" data-aos="fade-up">
+                    Worked with<span class="spandot">.</span> 
+                </div>
+            </div>
+            <div class="row workd-body">
+                <div class="col-lg-3 col-3"><img class="workd-item" data-aos="flip-left" src="assets/images/comp4.jpg"
+                    title="LabTech Instruments Pvt. Ltd."></div>
+                <div class="col-lg-3 col-3"><img class="workd-item" data-aos="flip-left" src="assets/images/comp2.png"            
+                    title="Encourage Infotech"></div>
+                <div class="col-lg-3 col-3"><img class="workd-item" data-aos="flip-right" src="assets/images/comp3.png" 
+                    title="Oxygen InfoLab Pvt. Ltd."></div>
+                <div class="col-lg-3 col-3"><img class="workd-item" data-aos="flip-right" src="assets/images/comp1.png" 
+                    title="SUAS Indore"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="row contacts">
+        <div class="col-lg-4 git" data-aos="fade-in">
+            <div class="row">
+                <div class="col-lg-12 col-6">
+                    Get in touch<span class="spandot">.</span></div>
+                <div class="col-lg-2 col-2">
+                    <a href="https://www.linkedin.com/in/moinuddin-sheikh/" target="_blank">
+                        <img class="btm-icon" src="assets/images/linkedin.png" title="Linkedin Profile">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-2">
+                    <a href="https://github.com/Moinuddinsheikh?tab=repositories" target="_blank">
+                        <img class="btm-icon" src="assets/images/github.png" title="Github Repositories">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-2">
+                    <a href="https://www.youtube.com/channel/UCFiD3j2TRWTCELuT1EyUfxg?view_as=subscriber" target="_blank">
+                        <img class="btm-icon" src="assets/images/youtube.png" title="YouTube Channel">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 logo" data-aos="zoom-in">
+            <img id="btm-logo" src="assets/images/logo.png">
+        </div>
+        <div class="col-lg-4 info" data-aos="fade-in">
+            <div class="row">moinuddinsheikh20@gmail.com</div>
+            <div class="row">96699-74045</div>
+            <div class="row">Indore, MP, India 452002</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
