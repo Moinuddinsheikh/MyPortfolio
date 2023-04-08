@@ -296,7 +296,8 @@ ul{
 }
 
 .projectitem-body{
-    font-size: 1.2em;
+    font-size: 1em;
+    padding-right: 3em;
 }
 
 .projectitem-img{
@@ -501,6 +502,7 @@ ul{
 
 .projectitem-body {
     font-size: 0.8em;
+    padding-right: 0em;
 }
 
 .projectitem-img{
