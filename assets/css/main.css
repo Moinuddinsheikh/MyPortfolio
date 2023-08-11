@@ -16,7 +16,7 @@ body{
     display: block;
     position: fixed;
     background-color: rgb(34,42,53);
-    z-index: 2;
+    z-index: 1;
 }
 
 #splash-logo{
@@ -56,11 +56,6 @@ body{
       }
 }
 
-#myname{
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
 #coverpage-shadow{
     display: block;
     position: absolute;
@@ -92,10 +87,31 @@ body{
     src: url(../fonts/Nunito-Regular.ttf);
 }
 
+@font-face{
+    font-family: "modern no.20";
+    src: url(../fonts/MOD20.TTF);
+}
+
+#info-text{
+    font-size: 1em;
+
+}
+
+.info-text-white {
+    color: white !important;
+}
+
+.coverpage-row{
+    min-height: 72vh;
+}
+
 #coverpage-txt{
     padding-left: 8%;
     padding-top: 5%;
     color: rgb(64,64,64);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #coverpage-intro span{
@@ -105,6 +121,7 @@ body{
 #coverpage-intro{
     font-family: "playfair";
     font-size: 2.3em;
+    z-index: 2;
 }
 
 #coverpage-list{
@@ -132,11 +149,11 @@ ul{
 
 #coverpage-list li::before{
     content: '';
-    height: 1px;
+    height: 2px;
     width: 0em;
     background-color: black;
     position: absolute;
-    margin: 0.8em 0 0 0;
+    margin: 0.75em 0 0 0;
 }
 
 #coverpage-list li.active::before{
@@ -152,16 +169,17 @@ ul{
 }
 
 #about{
-    width: 50%;
-    display: block;
-    margin-left: 25%;
-    background-color: white;
-    padding: 2%;
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(120deg, #e0c3fc88 0%, #8ec5fc88 100%);
     margin-top: 8%;
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: center;
     font-weight: 500;
     z-index: 1;
+    min-height: 40vh;
+    align-items: center;
+    padding: 0% 20%;
 }
 
 #about p{
@@ -170,7 +188,7 @@ ul{
 
 .skills{
     width: 80%;
-    margin: 15% 0% 10% 10%;
+    margin: 12% 0% 10% 10%;
 }
 
 #skill-title{
@@ -278,8 +296,14 @@ ul{
     color: white;
 }
 
+.project-title-col {
+    background-image: linear-gradient(to bottom, #505285 0%, #65689f 25%, #b5aee400 100%);
+}
+
 .project-row{
-    margin: 5% 2% 5% 0%;
+    margin: 0% 2% 0% 2%;
+    min-height: 100vh;
+    align-content: center;
 }
 
 #project-title{
@@ -293,16 +317,38 @@ ul{
 
 .projectitem-title{
     font-size: 2.3em;
+    font-family: "modern no. 20";
+    padding-bottom: 5vh;
 }
 
 .projectitem-body{
     font-size: 1em;
     padding-right: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectitem-body a {
+    color: lightseagreen !important;
 }
 
 .projectitem-img{
     width: 100%;
-    margin-top: 15%;
+    margin-top: 10%;
+}
+
+.project-tech-p {
+    padding-top: 5vh;
+}
+
+.project-links-p {  
+    padding-top: 5vh;
+} 
+
+.projects-divid {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    min-height: 1px;
+    margin-left: -15px;
 }
 
 .workd{
@@ -320,7 +366,7 @@ ul{
 
 .workd-item{
     text-align: center;
-    box-shadow: 0px 0px 20px 5px #888888cc;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
     border: 3px solid black;
     padding: 3px;
     background-color: white;
@@ -356,19 +402,33 @@ ul{
     width: 85%;
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
 @media (max-width: 600px){
     
+body {
+    width: 100vw;
+}
+
+#info-text {
+    font-size: 1.1rem;
+}
+
+.coverpage-row {
+    min-height: 85vh;
+}
+
 #coverpage-art{
     position: absolute;
     right: 10%;
-    width: 65%;
+    width: 75%;
     display: block;
-    margin-top: -80%;
+    margin-top: -50vh;
 }
 
 #splash-logo{
     width: 20%;
-    left: 40%;
+    left: 33%;
 }
 
 #coverpage-shadow{
@@ -379,7 +439,8 @@ ul{
     display: block;
     position: absolute;
     margin-top: -2%;
-    height: 80%;
+    height: 90%;
+    margin-left: -5%;
 }
 
 #coverpage-logo{
@@ -390,11 +451,12 @@ ul{
 
 #coverpage-intro{
     font-size: 1.3em;
+    margin-top: 10vh;
 }
 
 #coverpage-list{
     font-size: 1em;
-    margin-top: 40%;
+    margin-top: 45vh;
 }
 
 #coverpage-list li:hover::before{
@@ -406,19 +468,29 @@ ul{
 }
 
 #about {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 25%;
-    font-size: 1em;
+    width: 100%;
+    font-size: 1.1em;
+    margin: 15% 0% 15% 0%;
+    padding: 5% 10%;
+    min-height: 50vh;
 }
 
 .skills{
-    margin-top: 35%;
-    margin-left: 7%;
+    margin: 13% 7% 18% 7%;
+}
+
+.skills > div {
+    margin-left: 3%;
 }
 
 #skill-title {
     font-size: 2.5em;
+    margin-bottom: 30vh;
+}
+
+#skill-list {
+    height: 35rem;
+    width: 100vw;
 }
 
 .size-8{    font-size: 2em;   }
@@ -484,16 +556,19 @@ ul{
     top: 27%;
 }
 
+.project-title-col {
+    background-image: linear-gradient(to right, #505285 0%, #65689f 25%, #b5aee4 100%);
+}
+
 #project-title {
     writing-mode: horizontal-tb;
     font-size: 2.5em;
-    margin-left: 0;
-    margin-top: 10%;
+    margin: 10% 6%;
     text-align: center;
 }
 
 .project-row {
-    margin: 20% 2% 20% 0%;
+    margin: 10% 2% 10% 0%;
 }
 
 .projectitem-title {
@@ -502,7 +577,7 @@ ul{
 
 .projectitem-body {
     font-size: 0.8em;
-    padding-right: 0em;
+    padding-right: 0;
 }
 
 .projectitem-img{
@@ -535,13 +610,18 @@ ul{
     margin-left: 7%;
 }
 
+.workd > div {
+    padding: unset;
+}
+
 .workd-title{
     font-size: 1.5em;
     display: block ruby;
+    margin: 6% 0%;
 }
 
 .workd-body {
-    margin-top: 5%;
+    margin: 5% auto;
 }
 
 .workd-title .col-1 {
@@ -556,7 +636,7 @@ ul{
 
 .contacts {
     margin-top: 10%;
-    padding: 5% 10% 5% 10%;
+    padding: 8% 10% 5% 10%;
 }
 
 .contacts .git {
