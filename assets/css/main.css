@@ -428,7 +428,7 @@ body {
 
 #splash-logo{
     width: 20%;
-    left: 33%;
+    left: 35%;
 }
 
 #coverpage-shadow{
@@ -616,8 +616,8 @@ body {
 
 .workd-title{
     font-size: 1.5em;
-    display: block ruby;
-    margin: 6% 0%;
+    display: block;
+    margin: 6% auto;
 }
 
 .workd-body {
@@ -626,7 +626,7 @@ body {
 
 .workd-title .col-1 {
     padding: 0;
-    display: ruby;
+    max-width: 50vw;
 }
 
 .workd-body .col-3 {
