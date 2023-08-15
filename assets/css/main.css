@@ -79,17 +79,17 @@ body{
 
 @font-face{
     font-family: "playfair";
-    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+    src: url(../fonts/PlayfairDisplay-Regular.woff);
 }
 
 @font-face{
     font-family: "nunito";
-    src: url(../fonts/Nunito-Regular.ttf);
+    src: url(../fonts/Nunito-Regular.woff);
 }
 
 @font-face{
     font-family: "modern no.20";
-    src: url(../fonts/MOD20.TTF);
+    src: url(../fonts/MOD20.woff);
 }
 
 #info-text{
@@ -399,7 +399,11 @@ ul{
 }
 
 .btm-icon{
-    width: 85%;
+    width: 75%;
+}
+
+.contact-icons {
+    text-align: center;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
@@ -659,7 +663,7 @@ body {
 }
 
 .btm-icon {
-    width: 40%;
+    width: 35%;
     position: absolute;
     margin-top: 10%;
 }
