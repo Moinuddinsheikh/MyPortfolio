@@ -14,7 +14,7 @@ $(window).ready(function () {
       "Hello, My name is <b>Moinuddin Sheikh</b>.\n<br> I am a Software Developer.",
     ],
     typeSpeed: 50,
-    startDelay: 2100,
+    startDelay: 1700,
     onComplete: (self) => {
       $("#splash").fadeOut(1000);
       $("#info-text").toggleClass("info-text-white");
@@ -29,7 +29,7 @@ $(window).ready(function () {
   typed.start();
   setTimeout(function () {
     $("#splash-logo").fadeOut();
-  }, 1600);
+  }, 1200);
 
   $("#coverpage-list a").click(function (e) {
     e.preventDefault();
