@@ -29,31 +29,22 @@ body{
 }
 
 .popanim{
-    animation: popup 0.8s infinite;
+    animation: popup 0.8s infinite linear;
 }
 
 @keyframes popup{
-    0%{
-        transform: scale(1);
-      }
-      50%{
-        transform: scale(1.4);
-      }
-      60%{
-        transform: scale(1.1);
-      }
-      70%{
-        transform: scale(1.2);
-      }
-      80%{
-        transform: scale(1);
-      }
-      90%{
-        transform: scale(1.1);
-      }
-      100%{
-        transform: scale(1);
-      }
+    0% {
+        transform: rotate( 0deg ) scale( 1 );
+    }
+    10% {
+        transform: rotate( 15deg ) scale( 1 );
+    }
+    50% {
+        transform: rotate( -180deg ) scale( 1.4 );
+    }
+    80%,100% {
+        transform: rotate( -360deg ) scale( 1 );
+    }
 }
 
 #coverpage-shadow{
